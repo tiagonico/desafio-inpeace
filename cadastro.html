@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>UpperSoft</title>
+  <link rel="shortcut icon" href="./assets/edit-icon.png">
+  <link rel="stylesheet" href="./src/cadastro.css">
+</head>
+
+<div class="header" id="myHeader">
+
+  <img class="image__logo" src="/assets/logo-uppersoft.png" alt="MDN logo" />
+</div>
+
+<body class="body" onload="createStates()">
+
+  <div class="container">
+
+    <form action="./lista-usuarios.html" class="form" id="createAccount">
+      <h1 class="form__title">Cadastro</h1>
+
+      <div class="row">
+        <div class="column">
+          <div class="form__input-group">
+            <label class="label">Nome Completo</label>
+            <input type="text" class="form__input" autofocus>
+          </div>
+          <div class="form__input-group">
+            <label class="label">Estado</label>
+            <select class="form__input" name="states" id="states">              
+            </select>
+          </div>
+          <div class="form__input-group">
+            <label class="label">Senha</label>
+            <input type="password" class="form__input" autofocus>
+            <label class="label__senha">A senha deve ter no mínimo 6 caracteres</label>
+          </div>
+        </div>
+        <div class="column">
+          <div class="form__input-group">
+            <label class="label">E-mail</label>
+            <input type="text" class="form__input" autofocus>
+          </div>
+          <div class="form__input-group">
+            <label class="label">Sexo</label>
+            <div class="row">
+              <div class="column2">
+                <input type="radio" id="feminino" name="sex" value="feminino">
+                <label for="feminino">Feminino</label><br>
+              </div>
+              <div class="column2">
+                <input type="radio" id="masculino" name="sex" value="masculino">
+                <label for="masculino">Masculino</label><br>
+              </div>
+              <div class="column2">
+                <input type="radio" id="outro" name="sex" value="outro">
+                <label for="outro">Outro</label><br>
+              </div>
+            </div>
+          </div>
+          <div class="form__input-group">
+            <label class="label">Confirmar Senha</label>
+            <input type="password" class="form__input" autofocus>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="div__button">
+        <button class="form__button" type="submit">Registrar</button>
+      </div>
+
+      <p class="form__text">
+        Já tem uma conta?
+        <a class="form__link" href="./index.html" id="linkLogin">Entre aqui</a>
+      </p>
+    </form>
+  </div>
+  <script src="./src/cadastro.js">    
+  </script>
+</body>
