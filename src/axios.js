@@ -1,9 +1,18 @@
+const hideLoading = () => {
+  var loader = document.getElementById("preloader");
+  loader.style.display = "none"
+}
+
+const showLoading = () => {
+  var loader = document.getElementById("preloader");
+  loader.style.display = "flex"
+}
 
 const getData = () => {
   axios.get('https://reqres.in/api/users').then(res => {
-    console.log(res)
+ 
     var data = res.data.data
-    console.log(data)
+    
     var htmlCode = "<div class='parent'>"
 
       for(var i=0; i < data.length ; i++){
@@ -27,6 +36,12 @@ const getData = () => {
         `
       }
       document.getElementById('upper-div').innerHTML = htmlCode;
+
+      setTimeout(() => { hideLoading() }, 2000);
       
   })
 };
+
+
+
+

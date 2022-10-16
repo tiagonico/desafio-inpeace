@@ -10,17 +10,28 @@
   <script src="./src/axios.js" defer></script>
 </head>
 
-<div class="header" id="myHeader">  
-  <img class="image__logo" src="/assets/logo-uppersoft.png" alt="MDN logo" />
-</div>
+<header>
 
-<body style="padding-top: 100px;" onload="getData()">
+  <div class="header" id="myHeader">  
+    <img class="image__logo" src="/assets/logo-uppersoft.png" alt="logo" />
+  </div>
 
-  <div style="padding-bottom: 2rem;">
+</header>
+
+<body style="padding-top: 49px;" onload="getData()">
+
+  <div id="preloader" class="preloader"></div>
+
+  <div style="padding-bottom: 2rem;padding-top: 2rem;">
     <label class="label__title">Administrar usuários</label>
+
   </div>
   
 
   <div id="upper-div"></div>
   
+  <div class="div__footer">
+    <label class="label__footer">mostrando 6 de 12</label>
+  </div>
+
 </body>
