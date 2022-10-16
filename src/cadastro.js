@@ -1,3 +1,14 @@
+function signup(){
+
+  const email = document.getElementById("email").value
+  const senha = document.getElementById("senha").value
+
+  sessionStorage.setItem("email", email);
+  sessionStorage.setItem("senha", senha);
+
+  window.location.href= "./index.html";
+}
+
 function createStates(){
 
   fetch('./src/brazil-states.json')
@@ -9,7 +20,7 @@ function createStates(){
       for(var i=1; i < json.length ; i++){
         options += "<option class=\"option\" value='"+i+"'>"+json[i].nome+"</option>"
       }
-      document.getElementById('states').innerHTML = options;
+      document.getElementById('estado').innerHTML = options;
       });
 }
 

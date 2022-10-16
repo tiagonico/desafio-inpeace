@@ -9,33 +9,33 @@
   <script src="./src/main.js" defer></script>
 </head>
 
-<div class="header"> 
+<div class="header">
   <img class="image__logo" src="/assets/logo-uppersoft.png" alt="MDN logo" />
 </div>
 
-<body class="body"> 
+<body class="body">
 
   <div class="container">
-    <form class="form" id="login">
-      <h1 class="form__title">Acessar</h1>
-      
-      <div class="form__input-group">
-        <label>E-mail</label>
-        <input type="text" class="form__input">
-      </div>
-      <div class="form__input-group">
-        <label>Senha</label>
-        <input type="password" class="form__input">
-      </div>
-      <div class="div__button">
-        <button class="form__button" type="submit">ENTRAR</button>
-      </div>
-      
-      <p class="form__text">
-        Não possui conta?
-        <a class="form__link" href="cadastro.html" id="linkCreateAccount">Cadastre-se aqui</a>
-      </p>
-    </form>
+
+    <h1 class="form__title">Acessar</h1>
+
+    <div class="form__input-group">
+      <label>E-mail</label>
+      <input id="email" type="text" class="form__input">
+    </div>
+    <div class="form__input-group">
+      <label>Senha</label>
+      <input id="senha" type="password" class="form__input">
+    </div>
+    <div class="div__button">
+      <button onclick="login()" class="form__button">ENTRAR</button>
+    </div>
+
+    <p class="form__text">
+      Não possui conta?
+      <a class="form__link" href="cadastro.html" id="linkCreateAccount">Cadastre-se aqui</a>
+    </p>
+
   </div>
-  
+
 </body>

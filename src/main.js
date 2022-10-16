@@ -1,10 +1,16 @@
-const form  = document.getElementById('login');
+function login(){
 
-form.addEventListener('submit', (event) => {
-    console.log("login")
-});
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
 
+  const emailStorage = sessionStorage.getItem("email");
+  const senhaStorage = sessionStorage.getItem("senha");
 
+  if(email == emailStorage && senha == senhaStorage){
+    window.location.href= "./lista-usuarios.html";
+  }
+  
+}
 
 
 // function setFormMessage(formElement, type, message) {
