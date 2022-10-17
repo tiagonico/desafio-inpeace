@@ -1,13 +1,12 @@
-function signup(){
+var crypt = {
 
-  const email = document.getElementById("email").value
-  const senha = document.getElementById("senha").value
-
-  sessionStorage.setItem("email", email);
-  sessionStorage.setItem("senha", senha);
-
-  window.location.href= "./index.html";
-}
+  secret : "CIPHERKEY", 
+  
+  encrypt : (string) => {
+    var cipher = CryptoJS.AES.encrypt(string, crypt.secret);
+    return cipher.toString();
+  } 
+};
 
 function createStates(){
 
@@ -54,9 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const email = document.getElementById("email").value
     const senha = document.getElementById("senha").value
-    
+    const senhaCripto = crypt.encrypt(senha);
+
     sessionStorage.setItem("email", email);
-    sessionStorage.setItem("senha", senha);
+    sessionStorage.setItem("senha", senhaCripto);
     
     window.location.href= "./index.html";
   });

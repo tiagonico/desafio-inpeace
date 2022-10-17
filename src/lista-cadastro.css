@@ -1,3 +1,4 @@
+
 body {
   --color-primary: #174DBA;
   --color-white: #FFFFFF;
@@ -104,6 +105,15 @@ body {
   height: 30px;
 }
 
+.button__footer {
+  width: 12px;
+  height: 12px;
+}
+
+.button__footer:active {
+  transform: scale(0.9);
+}
+
 .button__edit:active {
   transform: scale(0.8);
 }
@@ -116,7 +126,6 @@ body {
 }
 
 .label__footer{
-  padding-right: 2rem;
   color: var(--color-dark);
   font-size: 16px;
   font-family: Helvetica, sans-serif;
@@ -174,10 +183,28 @@ body {
 }
 
 .preloader{
-  background: #fff url("/assets/loading.gif") no-repeat center center;
+  background: var(--color-gray);
   background-size: 50%;
   height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 100;
+}
+
+.loader {
+  border: 16px solid #b6b6b6; 
+  border-top: 16px solid var(--color-primary);
+  border-bottom: 16px solid var(--color-primary); 
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

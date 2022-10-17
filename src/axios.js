@@ -1,15 +1,15 @@
-const hideLoading = () => {
+function hideLoading() {
   var loader = document.getElementById("preloader");
   loader.style.display = "none"
-}
+};
 
-const showLoading = () => {
+function showLoading() {
   var loader = document.getElementById("preloader");
   loader.style.display = "flex"
-}
+};
 
-const getData = () => {
-  axios.get('https://reqres.in/api/users').then(res => {
+function setData(page) {
+  axios.get('https://reqres.in/api/users?page='+page).then(res => {
  
     var data = res.data.data
     
@@ -42,6 +42,14 @@ const getData = () => {
   })
 };
 
+function backButton(){
 
+  setData(1);
+  document.getElementById('label-footer').innerHTML = 'Mostrando de 1 a 6'
+};
 
+function forwardButton(){
 
+  setData(2);
+  document.getElementById('label-footer').innerHTML = 'Mostrando de 7 a 12'
+};

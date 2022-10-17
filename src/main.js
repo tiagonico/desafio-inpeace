@@ -1,3 +1,13 @@
+var crypt = {
+
+  secret : "CIPHERKEY", 
+ 
+  decrypt : (cipher) => {
+    var decipher = CryptoJS.AES.decrypt(cipher, crypt.secret);
+    return decipher.toString(CryptoJS.enc.Utf8);
+  }
+};
+
 function setFormMessage(formElement, type, message) {
   const messageElement = formElement.querySelector(".form__message");
 
@@ -19,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const emailStorage = sessionStorage.getItem("email");
     const senhaStorage = sessionStorage.getItem("senha");
 
-    if(email == emailStorage && senha == senhaStorage){
+    
+    if(email == emailStorage && senha == crypt.decrypt(senhaStorage)){
       window.location.href= "./lista-usuarios.html";
     }else{
       setFormMessage(loginForm, "error", "Email ou senha incorretos");
