@@ -25,6 +25,6 @@ Teste aos candidatos as vagas de desenvolvimento Frontend da Inpeaceapp.
  * Utilização de pré-processador de CSS (SASS/SCSS).
  * ✅ Na página de administrar usuários, opção de mostrar os usuários de 1 a 6 e de 7 a 12.
  * Botão de <i>logout</i> na tela de administrar usuários.
- * Fazer a criptografia da senha.
+ * ✅ Fazer a criptografia da senha.
  
  <b>OBS.:</b> A chave da função hash foi armazenada no código para esse exemplo simples, mas em uma aplicação real essa chave deve ser guardada em uma variável de ambiente.
