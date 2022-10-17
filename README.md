@@ -14,7 +14,7 @@ Teste aos candidatos as vagas de desenvolvimento Frontend da Inpeaceapp.
  
  # 📝 Requisitos do Desafio
  
- <b>Pré-requisitos:</b> Todos os pré-requisitos foram implementados.
+ <b>Pré-requisitos:</b> Todos os pré-requisitos foram cumpridos e implementados.
  
  <b>Plus:</b>
  * Utilização do Axios para as requests. ✅ 
