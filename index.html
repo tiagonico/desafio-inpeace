@@ -17,25 +17,30 @@
 
   <div class="container">
 
-    <h1 class="form__title">Acessar</h1>
+    <form id="login">
 
-    <div class="form__input-group">
-      <label>E-mail</label>
-      <input id="email" type="text" class="form__input">
-    </div>
-    <div class="form__input-group">
-      <label>Senha</label>
-      <input id="senha" type="password" class="form__input">
-    </div>
-    <div class="div__button">
-      <button onclick="login()" class="form__button">ENTRAR</button>
-    </div>
 
-    <p class="form__text">
-      Não possui conta?
-      <a class="form__link" href="cadastro.html" id="linkCreateAccount">Cadastre-se aqui</a>
-    </p>
+      <h1 class="form__title">Acessar</h1>
+      <div class="form__message form__message--error"></div>
 
+      <div class="form__input-group">
+        <label>E-mail</label>
+        <input id="email" type="email" class="form__input" required >
+      </div>
+      <div class="form__input-group">
+        <label>Senha</label>
+        <input id="senha" type="password" class="form__input" autocomplete="" required>
+      </div>
+    
+      <div class="div__button">
+        <button type="submit" class="form__button">ENTRAR</button>
+      </div>
+    </form>
+      <p class="form__text">
+        Não possui conta?
+        <a class="form__link" href="cadastro.html" id="linkCreateAccount">Cadastre-se aqui</a>
+      </p>
+    
   </div>
 
 </body>

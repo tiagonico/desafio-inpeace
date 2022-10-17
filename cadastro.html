@@ -6,6 +6,8 @@
   <title>UpperSoft</title>
   <link rel="shortcut icon" href="./assets/edit-icon.png">
   <link rel="stylesheet" href="./src/cadastro.css">
+  <script src="./src/cadastro.js">
+  </script>
 </head>
 
 <div class="header" id="myHeader">
@@ -17,64 +19,64 @@
 
   <div class="container">
 
-    <h1 class="form__title">Cadastro</h1>
-  
-    <div class="row">
-      <div class="column">
-        <div class="form__input-group">
-          <label class="label">Nome Completo</label>
-          <input id="nome" type="text" class="form__input" autofocus>
-        </div>
-        <div class="form__input-group">
-          <label class="label">Estado</label>
-          <select id="estado" class="form__input">
-          </select>
-        </div>
-        <div class="form__input-group">
-          <label class="label">Senha</label>
-          <input id="senha" type="password" class="form__input">
-          <label class="label__senha">A senha deve ter no mínimo 6 caracteres</label>
-        </div>
-      </div>
-      <div class="column">
-        <div class="form__input-group">
-          <label class="label">E-mail</label>
-          <input id="email" type="text" class="form__input">
-        </div>
-        <div class="form__input-group">
-          <label class="label">Sexo</label>
-          <div class="row">
-            <div class="column2">
-              <input id="sexoF" type="radio" id="feminino" name="sex" value="feminino">
-              <label for="feminino">Feminino</label><br>
-            </div>
-            <div class="column2">
-              <input id="sexoM" type="radio" id="masculino" name="sex" value="masculino">
-              <label for="masculino">Masculino</label><br>
-            </div>
-            <div class="column2">
-              <input id="sexoO" type="radio" id="outro" name="sex" value="outro">
-              <label for="outro">Outro</label><br>
-            </div>
+    <form id="signup">
+      <h1 class="form__title">Cadastro</h1>
+
+      <div class="row">
+        <div class="column">
+          <div class="form__input-group">
+            <label class="label">Nome Completo</label>
+            <input id="nome" type="text" class="form__input" required>
+          </div>
+          <div class="form__input-group">
+            <label class="label">Estado</label>
+            <select id="estado" class="form__input" required>
+            </select>
+          </div>
+          <div class="form__input-group">
+            <label class="label">Senha</label>
+            <input minlength="6" id="senha" type="password" class="form__input" autocomplete="" required>
+            <label class="label__senha">A senha deve ter no mínimo 6 caracteres</label>
           </div>
         </div>
-        <div class="form__input-group">
-          <label class="label">Confirmar Senha</label>
-          <input id="confirmarSenha" type="password" class="form__input">
+        <div class="column">
+          <div class="form__input-group">
+            <label class="label">E-mail</label>
+            <input id="email" type="email" class="form__input" required>
+          </div>
+          <div class="form__input-group">
+            <label class="label">Sexo</label>
+            <div class="row">
+              <div class="column2">
+                <input name="sexo" type="radio" id="feminino" value="feminino" required>
+                <label for="feminino">Feminino</label><br>
+              </div>
+              <div class="column2">
+                <input name="sexo" type="radio" id="masculino" value="masculino">
+                <label for="masculino">Masculino</label><br>
+              </div>
+              <div class="column2">
+                <input name="sexo" type="radio" id="outro" value="outro">
+                <label for="outro">Outro</label><br>
+              </div>
+            </div>
+          </div>
+          <div class="form__input-group">
+            <label class="label">Confirmar Senha</label>
+            <input minlength="6" id="confirmarSenha" type="password" class="form__input" autocomplete="" required>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="div__button">
-      <button onclick="signup()" class="form__button">CADASTRAR</button>
-    </div>
-  
+      <div class="div__button">
+        <button type="submit" class="form__button">CADASTRAR</button>
+      </div>
+    </form>
+
     <p class="form__text">
       Já tem uma conta?
       <a class="form__link" href="./index.html" id="linkLogin">Entre aqui</a>
     </p>
 
-  </div>
-  <script src="./src/cadastro.js">
-  </script>
+  </div>>
 </body>
