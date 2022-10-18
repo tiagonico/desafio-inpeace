@@ -3,12 +3,7 @@ body {
   --color-white: #FFFFFF;
   --color-gray: #EFF0F3;
   --color-dark: #505050;
-  --color-primary-dark: #156582;
-  --color-secondary: #252c6a;
   --color-error: #cc3333;
-  --color-button: #3ea4da;
-  --color-button-secondary: #ffffff;
-  --color-success: #4bb544;
   --border-radius: 10px;
 
   margin: 0;
@@ -105,7 +100,7 @@ body {
 .label__senha{
   font-weight: bold;
   font-size: medium;
-  color: var(--color-dark);
+  color: #bbbbbb;
 }
 
 .header {
@@ -146,10 +141,6 @@ body {
 .form__message {
   text-align: center;
   margin-bottom: 1rem;
-}
-
-.form__message--success {
-  color: var(--color-success);
 }
 
 .form__message--error {
@@ -209,7 +200,7 @@ body {
 
 .form__button:hover {
   color: var(--color-primary);
-  background: var(--color-button-secondary);
+  background: var(--color-white);
 }
 
 .form__button:active {
@@ -221,7 +212,7 @@ body {
 }
 
 .form__link {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   text-decoration: none;
   cursor: pointer;
 }
