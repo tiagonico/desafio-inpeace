@@ -1,8 +1,12 @@
+@import "scss/colors";
+@import "scss/variables";
+
 body {
   margin: 0;
-  border-radius: 10px;
-  font-family: "Heveltica Neue", "Quicksand", sans-serif;
-  background: #EFF0F3;
+  border-radius: $borderRadius;
+  font-family: $fontFamily;
+
+  background: $colorGray;
   background-size: cover;
 }
 
@@ -16,13 +20,13 @@ body {
   margin: 1rem;
   padding: 2rem;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  background: #FFFFFF;
+  border-radius: $borderRadius;
+  background: $colorWhite;
   justify-content: center;
   align-items: center;
 }
 
-.body {
+.body{
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -32,28 +36,29 @@ body {
 
 @media screen and (max-height: 500px) {
   .body {
-    height: 100%;
+    height:100%;
   }
 }
+
 .header {
   position: fixed;
   width: 100%;
   top: 0;
   text-align: center;
   padding: 0.5rem;
-  background: #174DBA;
+  background: $colorPrimary;  
 }
 
-label {
+label{
   font-weight: bold;
   font-size: medium;
-  color: #174DBA;
+  color: $colorPrimary;
 }
 
 .container,
 .form__input,
 .form__button {
-  font: 500 1rem "Quicksand", sans-serif;
+  font: 500 1rem 'Quicksand', sans-serif;
 }
 
 .form--hidden {
@@ -69,9 +74,13 @@ label {
 }
 
 .form__title {
-  font-weight: bold;
-  font-size: 32px;
-  color: #174DBA;
+
+  font: {
+    weight: bold;
+    size: 32px;
+  }
+  
+  color: $colorPrimary;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -82,7 +91,7 @@ label {
 }
 
 .form__message--error {
-  color: #cc3333;
+  color: $colorError;
 }
 
 .form__input-group {
@@ -90,34 +99,33 @@ label {
   padding-left: 10%;
   padding-right: 10%;
 }
-
 .form__input {
   display: block;
   width: 100%;
   padding: 0.75rem;
   margin-top: 0.5rem;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: $borderRadius;
   border: 1px solid #dddddd;
   outline: none;
-  background: #FFFFFF;
+  background: $colorWhite;
   transition: background 0.2s, border-color 0.2s;
 }
 
 .form__input:focus {
-  border-color: #174DBA;
-  background: #FFFFFF;
+  border-color: $colorPrimary;
+  background: $colorWhite;
 }
 
 .form__input--error {
-  color: #cc3333;
-  border-color: #cc3333;
+  color: $colorError;
+  border-color: $colorError;
 }
 
 .form__input-error-message {
   margin-top: 0.5rem;
   font-size: 0.85rem;
-  color: #cc3333;
+  color: $colorError;
 }
 
 .form__button {
@@ -126,16 +134,16 @@ label {
   font-weight: bold;
   font-size: 1rem;
   color: #ffffff;
-  border: 1px solid #174DBA;
-  border-radius: 10px;
+  border: 1px solid $colorPrimary;
+  border-radius: $borderRadius;
   outline: none;
   cursor: pointer;
-  background: #174DBA;
+  background: $colorPrimary;
 }
 
 .form__button:hover {
-  color: #174DBA;
-  background: #FFFFFF;
+  color: $colorPrimary;
+  background: $colorButtonSecondary;
 }
 
 .form__button:active {
@@ -147,7 +155,7 @@ label {
 }
 
 .form__link {
-  color: #174DBA;
+  color: $colorPrimary;
   text-decoration: none;
   cursor: pointer;
 }
@@ -156,7 +164,7 @@ label {
   text-decoration: underline;
 }
 
-.div__button {
+.div__button{
   padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;

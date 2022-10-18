@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "watch:scss": "sass -w --no-source-map index.scss:index.css pages/cadastro/cadastro.scss:pages/cadastro/cadastro.css pages/lista-usuarios/lista-usuarios.scss:pages/lista-usuarios/lista-usuarios.css"
+  },
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}

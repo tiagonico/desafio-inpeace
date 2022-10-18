@@ -12,11 +12,11 @@
 
 <header>
   <div class="header" id="myHeader">
-    <img class="image__logo" src="/assets/logo-uppersoft.png" alt="logo" />
+    <img class="header__img" src="/assets/logo-uppersoft.png" alt="logo" />
   </div>
 </header>
 
-<body style="padding-top: 49px;" onload="setData(1)">
+<body onload="setData(1)">
 
   <div id="preloader" class="preloader">
     <div class="loader"></div>
@@ -24,24 +24,25 @@
 
   <div id="myModal" class="modal">
 
-    <div class="modal-content">
+    <div class="modal-content">  
+
       <div class="modal-header">
         <span class="close">&times;</span>
         <h2>Editar usuário</h2>
       </div>
       <div class="modal-body">
 
-        <div style="padding-top: 2rem;" class="form__input-group">
+        <div style="padding-top: 2rem;" class="modal__input-group">
           <label>Nome</label>
-          <input id="nome-modal" type="nome" class="form__input" required>
+          <input id="name-modal" type="text" class="modal__input" required>
         </div>
-        <div class="form__input-group">
+        <div class="modal__input-group">
           <label>E-mail</label>
-          <input id="email-modal" type="email" class="form__input" autocomplete="" required>
+          <input id="email-modal" type="email" class="modal__input" autocomplete="" required>
         </div>
 
-        <div class="div__button">
-          <button onclick="changeUser()" class="form__button">CONFIRMAR</button>
+        <div class="modal__button-div">
+          <button onclick="changeUser()" class="modal__button">CONFIRMAR</button>
         </div>
       </div>
     </div>
@@ -49,7 +50,7 @@
   </div>
 
   <div class="dropdown">
-    <input type="image" src="/assets/config.png" onclick="myFunction()" class="dropbtn"></input>
+    <input type="image" src="/assets/config.png" onclick="toggleDropdown()" class="dropbtn"></input>
     <div id="myDropdown" class="dropdown-content">
       <a href="#">Configurações</a>
       <a href="#">Preferências</a>
@@ -57,17 +58,16 @@
     </div>
   </div>
 
-  <div style="padding-bottom: 2rem;padding-top: 2rem;">
-    <label class="label__title">Administrar usuários</label>
-
+  <div class="title-div">
+    <label class="title-div__lable">Administrar usuários</label>
   </div>
 
   <div id="upper-div"></div>
 
-  <div class="div__footer">
-    <input type="image" src="/assets/arrow-left.jpg" class="button__footer" onclick="backButton()"></input>
-    <label id="label-footer" class="label__footer"> Mostrando de 1 a 6</label>
-    <input type="image" src="/assets/arrow-right.jpg" class="button__footer" onclick="forwardButton()"
+  <div class="footer-div">
+    <input type="image" src="/assets/arrow-left.jpg" class="footer-div__button" onclick="backButton()"></input>
+    <label id="label-footer" class="footer-div__label"> Mostrando de 1 a 6</label>
+    <input type="image" src="/assets/arrow-right.jpg" class="footer-div__button" onclick="forwardButton()"
       style="margin-right: 8%"></input>
   </div>
 

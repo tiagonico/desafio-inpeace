@@ -1,11 +1,15 @@
+@import "../../scss/colors";
+@import "../../scss/variables";
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #EFF0F3;
+  
+  background: $colorGray;
   background-size: cover;
 }
 
-.body {
+.body{
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -15,9 +19,10 @@ body {
 
 @media screen and (max-height: 600px) {
   .body {
-    height: 100%;
+    height:100%;
   }
 }
+
 .header__img {
   width: 8rem;
 }
@@ -28,16 +33,18 @@ body {
   margin: 1rem;
   padding: 2rem;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  background: #FFFFFF;
+  border-radius: $borderRadius;
+  background: $colorWhite;
   justify-content: center;
   align-items: center;
 }
 
-.option {
-  color: #174DBA;
-  font-family: "Heveltica Neue", "Quicksand", sans-serif;
-  font-size: large;
+.option{
+  color: $colorPrimary;
+  font: {
+    family: $fontFamily;
+    size: large;
+  }  
 }
 
 .column {
@@ -59,40 +66,44 @@ body {
   clear: both;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px){
   .column {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 900px) and (max-height: 870px) {
-  .body {
-    height: 100%;
+  .body{
+    height:100%;
   }
 }
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 400px){
   .column2 {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 400px) and (max-height: 1020px) {
-  .body {
-    height: 100%;
-  }
-}
-.label {
-  font-weight: bold;
-  font-size: medium;
-  color: #174DBA;
+  .body{
+    height:100%;
+  }  
 }
 
-.label__senha {
+.label{
+  font-weight: bold;
+  font-size: medium;
+  color: $colorPrimary;
+}
+
+.label__senha{
   font-weight: bold;
   font-size: medium;
   color: #bbbbbb;
 }
 
-.label__radio {
-  color: #174DBA;
+.label__radio{
+  color: $colorPrimary;
 }
 
 .header {
@@ -101,13 +112,13 @@ body {
   top: 0;
   text-align: center;
   padding: 0.5rem;
-  background: #174DBA;
+  background: $colorPrimary;  
 }
 
 .container,
 .form__input,
 .form__button {
-  font: 500 1rem "Quicksand", sans-serif;
+  font: 500 1rem 'Quicksand', sans-serif;
 }
 
 .form--hidden {
@@ -125,7 +136,7 @@ body {
 .form__title {
   font-weight: bold;
   font-size: 32px;
-  color: #174DBA;
+  color: $colorPrimary;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -136,63 +147,63 @@ body {
 }
 
 .form__message--error {
-  color: #cc3333;
+  color: $colorError;
 }
 
 .form__input-group {
   margin-bottom: 1rem;
 }
-
 .form__input {
   display: block;
   width: 100%;
   padding: 0.75rem;
   margin-top: 0.3rem;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: $borderRadius;
   border: 1px solid #dddddd;
   outline: none;
-  background: #FFFFFF;
+  background: $colorWhite;
   transition: background 0.2s, border-color 0.2s;
 }
 
 .form__input:focus {
-  border-color: #174DBA;
-  background: #FFFFFF;
+  border-color: $colorPrimary;
+  background: $colorWhite;
 }
 
 .form__input--error {
-  color: #cc3333;
-  border-color: #cc3333;
+  color: $colorError;
+  border-color: $colorError;
 }
 
 .form__input-error-message {
   margin-top: 0.5rem;
   font-size: 0.85rem;
-  color: #cc3333;
+  color: $colorError;
 }
 
-.div__button {
+.div__button{
   padding-top: 1rem;
   text-align: center;
 }
 
 .form__button {
+  
   width: 50%;
   padding: 0.8rem;
   font-weight: bold;
   font-size: 1.1rem;
-  color: #FFFFFF;
-  border: 1px solid #174DBA;
-  border-radius: 10px;
+  color: $colorWhite;
+  border: 1px solid $colorPrimary;
+  border-radius: $borderRadius;
   outline: none;
   cursor: pointer;
-  background: #174DBA;
+  background: $colorPrimary;
 }
 
 .form__button:hover {
-  color: #174DBA;
-  background: #FFFFFF;
+  color: $colorPrimary;
+  background: $colorWhite;
 }
 
 .form__button:active {
@@ -204,7 +215,7 @@ body {
 }
 
 .form__link {
-  color: #174DBA;
+  color: $colorPrimary;
   text-decoration: none;
   cursor: pointer;
 }

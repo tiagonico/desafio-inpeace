@@ -1,37 +1,30 @@
+// Contains funtion to encrypt password
 var crypt = {
-
-  secret : "CIPHERKEY", 
-  
+  secret : "CIPHERKEY",   
   encrypt : (string) => {
     var cipher = CryptoJS.AES.encrypt(string, crypt.secret);
     return cipher.toString();
   } 
 };
 
+// Populate select component with Brazil States names
 function createStates(){
 
   fetch('./json/brazil-states.json')
     .then((response) => response.json())
     .then((json) => {
 
-      var options = "<option disabled selected value>Selecionar</option>"
+      var options = `<option class="option" disabled selected value>Selecionar</option>`
 
       for(var i=1; i < json.length ; i++){
-        options += "<option class=\"option\" value='"+i+"'>"+json[i].nome+"</option>"
+        options += `<option class="option" value='${i}'>${json[i].nome}</option>`
       }
       document.getElementById('estado').innerHTML = options;
       });
 }
 
-function setFormMessage(formElement, type, message) {
-  const messageElement = formElement.querySelector(".form__message");
-
-  messageElement.textContent = message;
-  messageElement.classList.remove("form__message--success", "form__message--error");
-  messageElement.classList.add(`form__message--${type}`);
-}
-
-function validarSenha(){
+// Verify if password and confirmPassword match
+function validatePassword(){
   if(senha.value != confirmarSenha.value) {
     confirmarSenha.setCustomValidity("As senhas devem ser iguais");
   } else {
@@ -39,13 +32,16 @@ function validarSenha(){
   }
 }
 
+// Runs when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", () => {
 
   var senha = document.getElementById("senha");
   var confirmarSenha = document.getElementById("confirmarSenha");
-  senha.onchange = validarSenha;
-  confirmarSenha.onkeyup = validarSenha;
+  senha.onchange = validatePassword;
+  confirmarSenha.onkeyup = validatePassword;
 
+
+  // Saves Email and Password in sessionStorage
   const signupForm = document.querySelector("#signup");
 
   signupForm.addEventListener("submit", e => {
