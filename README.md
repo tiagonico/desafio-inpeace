@@ -4,6 +4,24 @@
 
 Teste aos candidatos as vagas de desenvolvimento Frontend da Inpeaceapp.
 
+# 📜 Descrição
+
+<b>Objetivo:</b>
+
+Simular uma aplicação que consiste em gerenciar usuários de um sistema.
+Não será necessário qualquer tipo de validação de acesso ou outros tipos de tratamento, o propósito é simplesmente avaliar a capacidade de desenvolvimento das telas propostas.
+Ao final será possível apresentar suas habilidades com HTML, CSS, JavaScript e demais tecnologias.
+
+<b>Desafio:</b> 
+
+Serão três telas que, juntas, simulam o acesso a um sistema de gerenciamento de usuários.
+
+<b>Layout:</b> 
+
+* <b>Login:</b> Tela contendo cabeçalho, com logo da empresa, e um box com: título, campos de E-mail e Senha e botão de acesso e link para tela de cadastro.
+- <b>Cadastro:</b> Tela contendo cabeçalho e um box com formulário, título, campos de nome, e-mail, estado, sexo, senha e repetir senha, botão de cadastro e link para a tela de login.
+- <b>Lista de Usuários:</b> Tela contendo cabeçalho, título, lista em coluna contendo 6 cards com as informações do usuário (foto, nome, email e botão de editar) e informação de quantos usuários estão sendo mostrados e a quantidade total.
+
 # 🛠️ Instalação
 
 1️⃣ Primeiramente faça o download do projeto, seja baixando o arquivo .zip pelo navegador ou através do comando <i>git clone</i>.
