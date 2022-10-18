@@ -91,12 +91,16 @@ function setData(page) {
 function backButton() {
   setData(1);
   document.getElementById('label-footer').innerHTML = 'Mostrando de 1 a 6'
+  document.getElementById('forwardButton').style.visibility = 'visible'
+  document.getElementById('backButton').style.visibility = 'hidden'
 };
 
 // Set user cards with data of page 2
 function forwardButton() {
   setData(2);
   document.getElementById('label-footer').innerHTML = 'Mostrando de 7 a 12'
+  document.getElementById('forwardButton').style.visibility = 'hidden'
+  document.getElementById('backButton').style.visibility = 'visible'
 };
 
 // When the user clicks on the button, toggle between hiding and showing the dropdown content 

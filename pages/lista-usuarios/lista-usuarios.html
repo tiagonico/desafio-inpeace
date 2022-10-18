@@ -54,7 +54,7 @@
     <div id="myDropdown" class="dropdown-content">
       <a href="#">Configurações</a>
       <a href="#">Preferências</a>
-      <a style="color: red;" href="./../../index.html">Deslogar</a>
+      <a style="color: red;" href="./../../index.html">Sair</a>
     </div>
   </div>
 
@@ -65,9 +65,9 @@
   <div id="upper-div"></div>
 
   <div class="footer-div">
-    <input type="image" src="/assets/arrow-left.jpg" class="footer-div__button" onclick="backButton()"></input>
+    <input type="image" id="backButton" style="visibility: hidden;" src="/assets/arrow-left.jpg" class="footer-div__button" onclick="backButton()"></input>
     <label id="label-footer" class="footer-div__label"> Mostrando de 1 a 6</label>
-    <input type="image" src="/assets/arrow-right.jpg" class="footer-div__button" onclick="forwardButton()"
+    <input type="image" id="forwardButton" src="/assets/arrow-right.jpg" class="footer-div__button" onclick="forwardButton()"
       style="margin-right: 8%"></input>
   </div>
 
