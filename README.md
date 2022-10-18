@@ -30,11 +30,11 @@ Serão três telas que, juntas, simulam o acesso a um sistema de gerenciamento d
 
 <b>Observação:</b> o Axios foi utilizado via CDN (Content delivery network), por esse motivo não é necessário instalar via NPM, porém algumas funcionalidades só funcionarão corretamente se a máquina estiver com acesso à internet. 
  
-Para visualizar a aplicação e fazer mudanças no arquivos html e js os passos anteriores são suficientes. Porém, casa queria modificar os arquivos SCSS é necessário mais alguns passos:
+Para visualizar a aplicação e fazer mudanças no arquivos html e js os passos anteriores são suficientes. Porém, caso queira modificar os arquivos SCSS é necessário mais alguns passos:
 
- 3️⃣ Instale o Node caso não tenha intalado em sua máquina. <a href="https://nodejs.org/en/">Site oficial do Node</a>. 
+ 3️⃣ Instale o Node caso não tenha instalado em sua máquina. <a href="https://nodejs.org/en/">Site oficial do Node</a>. 
  
- 4️⃣ Na pasta do projeto digite o comando no terminal para fazer o download do SASS:
+ 4️⃣ Na pasta raiz do projeto digite o comando no terminal para fazer o download do SASS:
  
  * npm install
  
