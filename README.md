@@ -26,7 +26,7 @@ Serão três telas que, juntas, simulam o acesso a um sistema de gerenciamento d
 
 1️⃣ Primeiramente faça o download do projeto, seja baixando o arquivo .zip pelo navegador ou através do comando <i>git clone</i>.
 
-2️⃣ Com o projeto em sua máquina basta subir a aplicação no servidor local. Uma sugestão é utilizar a extensão Live-Server do Visual Studio Code. Para mais informações <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">clique aqui</a>.
+2️⃣ Com o projeto em sua máquina, na pasta raiz basta subir a aplicação no servidor local. Uma sugestão é utilizar a extensão Live-Server do Visual Studio Code. Para mais informações <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">clique aqui</a>.
 
 <b>Observação:</b> o Axios foi utilizado via CDN (Content delivery network), por esse motivo não é necessário instalar via NPM, porém algumas funcionalidades só funcionarão corretamente se a máquina estiver com acesso à internet. 
  
