@@ -30,6 +30,18 @@ Serão três telas que, juntas, simulam o acesso a um sistema de gerenciamento d
 
 <b>Observação:</b> o Axios foi utilizado via CDN (Content delivery network), por esse motivo não é necessário instalar via NPM, porém algumas funcionalidades só funcionarão corretamente se a máquina estiver com acesso à internet. 
  
+Para visualizar a aplicação e fazer mudanças no arquivos html e js os passos anteriores são suficientes. Porém, casa queria modificar os arquivos SCSS é necessário mais alguns passos:
+
+ 3️⃣ Instale o Node caso não tenha intalado em sua máquina. <a href="https://nodejs.org/en/">Site oficial do Node</a>. 
+ 
+ 4️⃣ Na pasta do projeto digite o comando no terminal para fazer o download do SASS:
+ 
+ * npm install
+ 
+ 5️⃣ Com o SASS instalado para compilar os arquivos SCSS em CSS basta rodar o comando:
+ 
+ * npm run watch:scss
+ 
  # 📝 Requisitos do Desafio
  
  <b>Pré-requisitos:</b> Todos os pré-requisitos foram cumpridos e implementados.
@@ -40,7 +52,7 @@ Serão três telas que, juntas, simulam o acesso a um sistema de gerenciamento d
  
  <b>OBS.:</b> Como o tempo de resposta da API é muito rápido, a tela de <i>loading</i> praticamente não aparece, por conta disso foi adicionado um <i>delay</i> de 2 segundos no código para que a tela de <i>loading</i> possa aparecer. 
  
- * Utilização de pré-processador de CSS (SASS/SCSS).
+ * ✅ Utilização de pré-processador de CSS (SASS/SCSS).
  * ✅ Na página de administrar usuários, opção de mostrar os usuários de 1 a 6 e de 7 a 12.
  * ✅ Botão de <i>logout</i> na tela de administrar usuários.
  * ✅ Fazer a criptografia da senha.
