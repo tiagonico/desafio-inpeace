@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>UpperSoft</title>
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="./lista-usuarios.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./lista-usuarios.js" defer></script>
+</head>
+
+<header>
+  <div class="header" id="myHeader">
+    <img class="image__logo" src="/assets/logo-uppersoft.png" alt="logo" />
+  </div>
+</header>
+
+<body style="padding-top: 49px;" onload="setData(1)">
+
+  <div id="preloader" class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Editar usuário</h2>
+      </div>
+      <div class="modal-body">
+
+        <div style="padding-top: 2rem;" class="form__input-group">
+          <label>Nome</label>
+          <input id="nome-modal" type="nome" class="form__input" required>
+        </div>
+        <div class="form__input-group">
+          <label>E-mail</label>
+          <input id="email-modal" type="email" class="form__input" autocomplete="" required>
+        </div>
+
+        <div class="div__button">
+          <button onclick="changeUser()" class="form__button">CONFIRMAR</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="dropdown">
+    <input type="image" src="/assets/config.png" onclick="myFunction()" class="dropbtn"></input>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Configurações</a>
+      <a href="#">Preferências</a>
+      <a style="color: red;" href="./../../index.html">Deslogar</a>
+    </div>
+  </div>
+
+  <div style="padding-bottom: 2rem;padding-top: 2rem;">
+    <label class="label__title">Administrar usuários</label>
+
+  </div>
+
+  <div id="upper-div"></div>
+
+  <div class="div__footer">
+    <input type="image" src="/assets/arrow-left.jpg" class="button__footer" onclick="backButton()"></input>
+    <label id="label-footer" class="label__footer"> Mostrando de 1 a 6</label>
+    <input type="image" src="/assets/arrow-right.jpg" class="button__footer" onclick="forwardButton()"
+      style="margin-right: 8%"></input>
+  </div>
+
+</body>
