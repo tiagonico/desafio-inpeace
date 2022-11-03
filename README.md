@@ -4,7 +4,7 @@
 
 Teste aos candidatos as vagas de desenvolvimento Frontend da Inpeaceapp.
 
-# 📜 Descrição
+## 📜 Descrição
 
 <b>Objetivo:</b>
 
@@ -22,7 +22,7 @@ Serão três telas que, juntas, simulam o acesso a um sistema de gerenciamento d
 - <b>Cadastro:</b> Tela contendo cabeçalho e um box com formulário, título, campos de nome, e-mail, estado, sexo, senha e repetir senha, botão de cadastro e link para a tela de login.
 - <b>Lista de Usuários:</b> Tela contendo cabeçalho, título, lista em coluna contendo 6 cards com as informações do usuário (foto, nome, email e botão de editar) e informação de quantos usuários estão sendo mostrados e a quantidade total.
 
-# 🛠️ Instalação
+## 🛠️ Instalação
 
 1️⃣ Primeiramente faça o download do projeto, seja baixando o arquivo .zip pelo navegador ou através do comando <i>git clone</i>.
 
@@ -46,7 +46,7 @@ Para visualizar a aplicação e fazer mudanças no arquivos html e js os passos 
  npm run watch:scss
  ```
  
- # 📝 Requisitos do Desafio
+ ## 📝 Requisitos do Desafio
  
  <b>Pré-requisitos:</b> Todos os pré-requisitos foram cumpridos e implementados.
  
