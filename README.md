@@ -36,11 +36,15 @@ Para visualizar a aplicação e fazer mudanças no arquivos html e js os passos 
  
  4️⃣ Na pasta raiz do projeto digite o comando no terminal para fazer o download do SASS:
  
- * npm install
+ ```
+ npm install
+ ```
  
  5️⃣ Com o SASS instalado para compilar os arquivos SCSS em CSS basta rodar o comando:
  
- * npm run watch:scss
+ ```
+ npm run watch:scss
+ ```
  
  # 📝 Requisitos do Desafio
  
